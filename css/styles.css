@@ -1,0 +1,272 @@
+/**normalizado de css **/
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+  header { grid-area: header;}
+  main {grid-area: main;}
+  footer {grid-area: footer;}
+
+
+ body {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+ }
+
+
+
+
+ /**Textos**/
+ * {
+  font-family: 'Open Sans', sans-serif;
+  line-height: normal;
+ }
+
+ h1 {
+  font-size: 10rem;
+  font-weight: 800;
+ }
+
+ h2 {
+  font-size: 4rem;
+  font-weight: 800;
+ }
+
+ p {
+  font-size: 1rem;
+  font-weight: 100;
+ }
+
+ /**Colores**/
+
+ .j1 {
+  color: #91847D;
+ }
+
+ .j2 {
+  color: white;
+ }
+
+ .j3 {
+  color: #DDD7D4;
+ }
+ .j4 {
+  color: #6E918F;
+ }
+ .j5 {
+  color: #D5DEDD;
+ }
+
+ .j6 {
+  color: black;
+ }
+
+
+ /**Colores Background**/
+
+ .bg-j1 {
+  background-color: #91847D;
+ }
+ .bg-j2 {
+  background-color: white;
+ }
+ .bg-j3 {
+  background-color: #DDD7D4;
+ }
+ .bg-j4 {
+  background-color: #6E918F;
+ }
+ .bg-j5 {
+  background-color: #D5DEDD;
+ }
+ .bg-black {
+  background-color: black;
+ }
+
+
+  /**header**/
+
+  header {
+    display: flex;
+    justify-content: center;
+    height: 7vh;
+  }
+
+.headerIndex {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.logo {
+  width: 100%;
+  max-width: 6.25rem;
+  margin-right: 2rem;
+}
+
+.navBar {
+  display: flex;
+  list-style: none;
+  gap: 1.25rem;
+}
+
+.navBar li a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: black;
+
+}
+
+/**main**/
+/**Index**/
+.mainIndex {
+height: 83vh;
+display: flex;
+justify-content: center;
+} 
+
+.seccionPrincipal {
+  width: 100%;
+  max-width: 90rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: start;
+  gap: 2rem;
+  padding: 1rem 1rem 4rem;
+}
+
+.seccionPrincipal h2 {
+  font-weight: 400;
+  margin-left: 5.5rem;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+/**Footer**/
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.rrss {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.rrss li {
+  list-style: none;
+}
+
+.rrss img {
+  width: 100%;
+  max-width: 20px;
+}
+
+/**Trabajos**/
+
+
+/**Seccion banner **/
+.heroBanner {
+  background-image: url('../assets/img/trabajos/bg-trabajos.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 40rem;
+
+}
+
+.contentHerobanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  max-width: 90rem;
+  padding: 2rem 1rem;
+}
+
+
+.contentHerobanner h1 {
+  font-weight:700;
+}
+.contentHerobanner h2 {
+  margin-left: 10rem;
+  font-weight: 400;
+}
+
+
+/**Menu Trabajos**/
+
+.seccionTrabajos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contentMenutrabajo {
+  display: flex;
+  align-items: center;
+width: 100%;
+max-width: 90rem;
+justify-content: center;
+padding: 1rem;
+height: 20rem;
+}
+
+.menuTrabajos {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.menuTrabajos li {
+  list-style: none;
+}
+
+.menuTrabajos li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+/**Contenedores de trabajps**/
+
+.contentTrabajos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
