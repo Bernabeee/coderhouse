@@ -13,7 +13,7 @@
   footer {grid-area: footer;}
 
 
- body {
+ /**body {
   height: 100vh;
   display: grid;
   grid-template-areas:
@@ -21,7 +21,7 @@
     'main'
     'footer';
  }
-
+**/
 
 
 
@@ -32,12 +32,12 @@
  }
 
  h1 {
-  font-size: 10rem;
+  font-size: 5rem;
   font-weight: 800;
  }
 
  h2 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 800;
  }
 
@@ -171,6 +171,8 @@ footer {
   padding: 1rem;
   text-align: center;
   width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .rrss {
@@ -193,20 +195,20 @@ footer {
 
 
 /**Seccion banner **/
-.heroBanner {
+.heroBanner__trabajos{
   background-image: url('../assets/img/trabajos/bg-trabajos.jpg');
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  height: 40rem;
+  height: 20rem;
 
 }
 
-.contentHerobanner {
+.heroBanner__trabajos--content {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -215,17 +217,17 @@ footer {
   width: 100%;
   max-width: 90rem;
   padding: 2rem 1rem;
+  color: #91847D;
 }
 
-
-.contentHerobanner h1 {
+.heroBanner__content--nosotros h1 {
   font-weight:700;
 }
-.contentHerobanner h2 {
-  margin-left: 10rem;
+
+.heroBanner__content--nosotros h2 {
+  margin-left: 15rem;
   font-weight: 400;
 }
-
 
 /**Menu Trabajos**/
 
@@ -235,6 +237,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 3rem 0rem;
 }
 
 .contentMenutrabajo {
@@ -244,7 +247,7 @@ width: 100%;
 max-width: 90rem;
 justify-content: center;
 padding: 1rem;
-height: 20rem;
+height: 10rem;
 }
 
 .menuTrabajos {
@@ -266,7 +269,586 @@ height: 20rem;
 /**Contenedores de trabajps**/
 
 .contentTrabajos {
+  width: 90rem;
+  gap: 1.5rem;
+display: grid;
+padding-bottom: 2rem;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: auto;
+grid-template-areas:
+"a b c"
+"a d c"
+"e d f"
+"e h f"
+"e i f" ;
+
+}
+
+.i1 {
+  grid-area: a;
+}
+
+.i2 {
+  grid-area: b;
+}
+.i3 {
+  grid-area: c;
+}
+.i4 {
+  grid-area: d;
+}
+.i5 {
+  grid-area: e;
+}
+.i6 {
+  grid-area: f;
+}
+.i7 {
+  grid-area: g;
+}
+.i8 {
+  grid-area: h;
+}
+.i9 {
+  grid-area: i;
+}
+
+.contentTrabajos img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 2rem;  object-fit: cover;
+}
+
+.btn-cargar {
+  background: gray;
+  padding: 1rem 2rem;
+  border-radius: 100rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: black;
+}
+
+/**QUIENES SOMOS**/
+
+.heroBanner__quienesSomos {
+  background-image: url('../assets/img/nosotros/bg-nosotros.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 20rem;
+
+}
+
+.heroBanner__content--nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  max-width: 90rem;
+  padding: 2rem 1rem;
+  color: #91847D;
+}
+
+.heroBanner__content--nosotros h1 {
+  font-weight:700;
+}
+
+.heroBanner__content--nosotros h2 {
+  margin-left: 15rem;
+  font-weight: 400;
+}
+
+.contentNosotros {
   display: flex;
   flex-wrap: wrap;
+  width: 90rem;
   justify-content: center;
+  margin: auto;
+  gap: 1%;
+  padding: 5rem 0rem;
+  color: #91847D;
+}
+
+.contentNosotros__galery {
+  display: grid;
+  width: 49%;
+  grid-template-columns: auto auto;
+  grid-template-areas: "nosotros1 nosotros2"
+                        "nosotros1 nosotros3"
+                        "nosotros1 nosotros3"
+                        "nosotros5 nosotros3"
+                        "nosotros5 nosotros4"
+                        "nosotros5 nosotros4";
+  gap: 2rem;
+}
+
+.contentNosotros__text {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: flex-end;
+  padding: 0rem 2rem;
+}
+
+.contentNosotros__text p {
+  font-size: 1.2rem;
+}
+
+.mariaLuisa {
+  grid-area: nosotros1;
+  height: 26.75rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+.joseRaul {
+  grid-area: nosotros2;
+  height: 11.5625rem ;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+.oficina {
+  grid-area: nosotros3;
+  height: 22.375rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+.cartelNeon {
+  grid-area: nosotros4;
+  height: 13.875rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+.rafaelLeon {
+  grid-area: nosotros5;
+  height: 22.375rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+.contentHablemos {
+  display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    background: #E6E6E6;
+    flex-wrap: wrap;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentHablemos p {
+  width: 90rem;
+  font-size: 2rem;
+  color: #91847D;
+
+}
+
+
+.contentHablemos a {
+  width: 200px;
+  background: black;
+  padding: 1rem 2rem;
+  border-radius: 100rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/**CONTACTO**/
+
+.contentContacto {
+  background-image: url('../assets/img/contacto/bg-contacto.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 20rem;
+}
+
+.contentContacto__heroBanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  max-width: 90rem;
+  padding: 2rem 1rem;
+  color: #91847D;
+}
+
+.contentForm {
+  display: flex;
+    justify-content: center;
+    height: 60vh;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.contentForm__form {
+  background: #F5F5F5;
+  width: 60rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+form {
+  display: flex;
+    flex-flow: wrap;
+    gap: 1rem;
+    color: #91847D;
+    font-size: 1.5rem;
+}
+form div {
+  width: 49%;
+  padding: 1.5rem 0rem;
+}
+form input {
+  width: 100%;
+    border: none;
+    border-bottom: 1px black solid;
+    padding: 1rem 0rem 0rem 0.2rem;
+    background: none;
+    font-size: 1.2rem;
+    color: lightgray;
+}
+
+form .text {
+  width: 100%;
+}
+
+.contentBtn {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+.contentBtn .btn-enviar {
+    background: black;
+    padding: 1rem 2rem;
+    border-radius: 100rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: black;
+    width: 15rem;
+
+}
+
+/**Starbucks**/
+
+
+.heroBanner__starbucks {
+  background-image: url('../assets/img/starbuks/bg-starbucks.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.contentOne {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  height: 50rem;
+}
+
+.contentOne__content {
+  display: flex;
+    width: 100%;
+    max-width: 1440px;
+    gap: 2rem;
+}
+
+.contentOne__content--text {
+  display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 2rem 0rem;
+}
+
+.contentOne__content--text p {
+  font-size: 1.2rem;
+}
+
+
+.contentTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  padding: 6rem 0rem;
+}
+
+.contentTwo div {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.contentTwo div img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.contentTwo__content {
+  display: flex;
+  gap: 2rem;
+}
+.contentTwo__content--text {
+  display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1.2rem;
+    padding: 2rem 0rem;
+}
+
+.footer-work {
+  position: unset;
+}
+
+
+.btnVolver {
+  position: sticky;
+  left: 1rem;
+  bottom: 2rem;
+  z-index: 2;
+}
+
+.burger, .cerrar {
+  display: none; }
+
+
+@media (max-width: 1024px) {
+  /* … */
+  .seccionPrincipal {
+    width: 100%;
+    max-width: 90rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+    gap: 0.6rem;
+    padding: 1rem 1rem 2rem;
+}
+
+}
+
+@media (max-width: 768px) {
+  .seccionPrincipal {
+    width: 100%;
+    max-width: 90rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+    gap: 0.6rem;
+    padding: 1rem 1rem 2rem;
+}
+.contentForm__form {
+  background: #F5F5F5;
+  width: 90%;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+form div {
+  width: 48%;
+  padding: 1.5rem 0rem;
+}
+
+}
+@media (max-width: 425px) {
+ .burger, .cerrar {
+  display: block; }
+
+  .headerIndex {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 1rem;
+    width: 100%;
+    flex-direction: column;
+    background: white;
+  }
+  
+  .logo {
+    width: 100%;
+    max-width: 6.25rem;
+    margin-right: 2rem;
+  }
+  
+  .navBar {
+    display: flex;
+    list-style: none;
+    gap: 1.25rem;
+    flex-direction: column;
+  }
+.nav {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .navBar li a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: black;
+  
+  }
+  .navBar__visible {
+    opacity: 1;
+    visibility:visible;
+  }
+
+  .seccionPrincipal {
+    width: 100%;
+    max-width: 90rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+    gap: 1rem;
+    padding: 1rem 1rem 2rem;
+}
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+h2 {
+    font-size: 1.5rem;
+}
+
+.seccionPrincipal h2 {
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+.contentForm {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-content: center;
+  flex-wrap: wrap;
+}
+form div {
+  width: 100%;
+  padding: 1.5rem 0rem;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  position: unset;
+  bottom: 0;
+}
+
+.contentBtn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.contentForm__form {
+  background: #F5F5F5;
+  width: 90%;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+}
+
+@media (max-width: 320px) {
+
+  .seccionPrincipal {
+    width: 100%;
+    max-width: 90rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+    gap: 0.6rem;
+    padding: 1rem 1rem 4rem;
+}
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+h2 {
+    font-size: 1.2rem;
+}
+
+.seccionPrincipal h2 {
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+
+form div {
+  width: 100%;
+  padding: 1.5rem 0rem;
+}
+
+.contentForm {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-content: center;
+  flex-wrap: wrap;
+}
+form div {
+  width: 100%;
+  padding: 1.5rem 0rem;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  position: unset;
+  bottom: 0;
+}
+
+.contentBtn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.contentForm__form {
+  background: #F5F5F5;
+  width: 90%;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+  /* … */
 }

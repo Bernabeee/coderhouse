@@ -16,32 +16,46 @@
         <nav>
             <ul class="navBar">
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./pages/quienes-somos.html">Quienes somos</a></li>
-                <li><a href="./pages/trabajos.html">Trabajos</a></li>
+                <li><a href="./quienes-somos.html">Quienes somos</a></li>
+                <li><a href="./trabajos.html">Trabajos</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </section>
     </header>
     <main>
-        <section>
+        <section class="contentContacto">
+            <div class="contentContacto__heroBanner">
             <h1>“Lorem Ipsum”</h1>
             <h2>lorem ipsum desar jacal de le</h2>
+        </div>
         </section>
-        <section>
-            <div>
+        <section class="contentForm">
+            <div class="contentForm__form">
                 <form action="">
-                    <label for="fname">Nombre</label><br>
+                    <div>
+                        <label for="fname">Nombre</label><br>
                     <input type="text" id="fname" name="fname" value="Julio">
-                    <label for="lname">Apellido</label><br>
+                    </div>
+                    <div>
+                        <label for="lname">Apellido</label><br>
                     <input type="text" id="lname" name="lname" value="Adriazola">
+                    </div>
+                    <div>
                     <label for="email">Email</label><br>
                     <input type="email" id="email" name="email" value="bernabeadriazola@gmail.com">
-                    <label for="phone">Numeno telefónico</label><br>
+                    </div>
+                    <div>
+                        <label for="phone">Numeno telefónico</label><br>
                     <input type="tel" id="phone" name="phone" value="+569 751 XXXXX">
-                    <label for="meessage">Mensaje</label><br>
+                    </div>
+                    <div class="text">
+                        <label for="meessage">Mensaje</label><br>
                     <input type="text" id="meessage" name="meessage" value="Escriba su mensaje aquí">
-                    <input type="submit" value="Enviar mensaje">
+                    </div>
+                    <div class="contentBtn">
+                        <input class="btn-enviar" type="submit" value="Enviar mensaje">
+                    </div>
                 </form>
             </div>
         </section>
