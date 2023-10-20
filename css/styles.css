@@ -171,8 +171,6 @@ footer {
   padding: 1rem;
   text-align: center;
   width: 100%;
-  position: absolute;
-  bottom: 0;
 }
 
 .rrss {
@@ -501,7 +499,7 @@ grid-template-areas:
 .contentForm {
   display: flex;
     justify-content: center;
-    height: 60vh;
+    height: 50rem;
     align-content: center;
     flex-wrap: wrap;
 }
@@ -660,6 +658,21 @@ object-fit: cover;
     gap: 0.6rem;
     padding: 1rem 1rem 2rem;
 }
+.contentForm {
+  display: flex;
+  justify-content: center;
+  height: 60rem;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  position: unset;
+  bottom: 0;
+}
 
 }
 
@@ -684,6 +697,21 @@ object-fit: cover;
 form div {
   width: 48%;
   padding: 1.5rem 0rem;
+}
+.contentForm {
+  display: flex;
+  justify-content: center;
+  height: 60rem;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  position: unset;
+  bottom: 0;
 }
 
 }
